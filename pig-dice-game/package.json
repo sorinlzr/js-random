@@ -5,11 +5,13 @@
   "main": "js/server.js",
   "scripts": {
     "start": "node js/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "copyfiles index.html package.json style.css img/*.* js/*.js dist"
   },
   "author": "Sorin Lzr",
   "license": "ISC",
   "dependencies": {
+    "copyfiles": "^2.4.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1"
   }
